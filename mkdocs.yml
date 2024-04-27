@@ -6,9 +6,11 @@ repo_url: https://github.com/gristlabs/mkdocs-windmill
 
 theme:
   name: null
-  locale: zh_CN
-  name: mkdocs
-
+  custom_dir: mkdocs_windmill
+  # Copy settings from mkdocs_theme.yml, which is ignored by custom_dir themes.
+  static_templates: [404.html]
+  search_index_only: true
+  include_search_page: true
 
 
 nav:
@@ -19,12 +21,7 @@ nav:
 - 东方红魔乡: hmg.md
 - 东方妖妖梦: yym.md
 - 东方永夜抄: yyc.md
-- 东方妖妖梦: yym.md
-- 东方永夜抄: yyc.md
-- 东方妖妖梦: yym.md
-- 东方永夜抄: yyc.md
-- 东方妖妖梦: yym.md
-- 东方永夜抄: yyc.md
+
 
 markdown_extensions:
   - toc:
