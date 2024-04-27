@@ -1,0 +1,35 @@
+site_name: 'Touhou MCbattle 符卡数据'
+site_description: 'MkDocs theme focused on navigation and usability.'
+site_author: 'Dmitry S'
+
+repo_url: https://github.com/gristlabs/mkdocs-windmill
+
+theme:
+  name: null
+  locale: zh_CN
+  name: mkdocs
+
+
+
+nav:
+- 介绍: index.md
+- 主角组: 
+  - 博丽灵梦: lm.md
+  - 雾雨魔理沙: mls.md
+- 东方红魔乡: hmg.md
+- 东方妖妖梦: yym.md
+- 东方永夜抄: yyc.md
+- 东方妖妖梦: yym.md
+- 东方永夜抄: yyc.md
+- 东方妖妖梦: yym.md
+- 东方永夜抄: yyc.md
+- 东方妖妖梦: yym.md
+- 东方永夜抄: yyc.md
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+
+extra:
+  history_buttons: false
+  version: v0.17.18
