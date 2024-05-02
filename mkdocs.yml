@@ -1,32 +1,47 @@
-site_name: 'Touhou MCbattle 符卡数据'
-site_description: 'MkDocs theme focused on navigation and usability.'
-site_author: 'Dmitry S'
-
-repo_url: https://github.com/gristlabs/mkdocs-windmill
+site_name: GapWorks 东方Project主题服务器组
 
 theme:
-  name: null
-  custom_dir: mkdocs_windmill
-  # Copy settings from mkdocs_theme.yml, which is ignored by custom_dir themes.
-  static_templates: [404.html]
-  search_index_only: true
-  include_search_page: true
+  name: material
+  language: zh
+  palette:
+      primary: deep purple
 
+  features:
+  - navigation.top
+  - navigation.tabs
+  - navigation.indexes
+  - search.suggest
+  - content.code.copy
+  - content.tooltips
+  icon:
+    annotation: material/plus-circle
+
+plugins:
+  - search
+  - blog
+  - tags
 
 nav:
-- 介绍: index.md
-- 主角组: 
-  - 博丽灵梦: lm.md
-  - 雾雨魔理沙: mls.md
-- 东方红魔乡: hmg.md
-- 东方妖妖梦: yym.md
-- 东方永夜抄: yyc.md
-
+  - 主页: index.md
+  - 玩家指南:
+    - 前言: index2.md 
+    - 服务器规则: page1.md
+    - 加入服务器: page2.md
+    - 内容概览: page3.md
+    - 常见FAQ: page4.md
+  - Touhou Mcbattle Wiki: wiki.md
+  - 小游戏服: xyx.md
+  - 生存服: sc.md
 
 markdown_extensions:
-  - toc:
-      permalink: '#'
+- attr_list
 
-extra:
-  history_buttons: false
-  version: v0.17.18
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - abbr
+  - attr_list
+  - md_in_html
+
+copyright: Copyright &copy; 2020 - 2024 GapWorks
